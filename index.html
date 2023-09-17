@@ -4,14 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
+    <header id="header">
       <picture>
-        <img src="./images/Code Elite.png" alt="logo of code elite academy" />
+        <img
+          class="logo-image"
+          src="./images/Code Elite.png"
+          alt="logo of code elite academy"
+        />
       </picture>
-      <nav>
+      <nav id="navigation">
         <a href="./pages/frontend/">Frontend</a>
         <a href="./pages/backend/">Backend</a>
         <a href="./pages/webDesign/">Webdesign</a>
@@ -20,16 +30,18 @@
     </header>
     <section id="intro-section">
       <div>
-        <h1>Start your career in tech</h1>
-        <p>
-          Turn ambition into job-ready skills and become a Frontend developer,
-          Backend developer or UX/UI web Designer from scratch.
+        <h1 class="main-heading">Start your career in tech</h1>
+        <p class="intro-text">
+          Turn ambition into job-ready skills<br />
+          and become a Frontend developer, Backend developer<br />
+          or UX/UI web Designer from scratch.
         </p>
         <button>Explore Courses</button>
         <button>Apply now</button>
       </div>
       <picture>
         <img
+          class="intro-image"
           src="./images/intro_image.jpeg"
           alt="wallpaper of coding academy"
         />

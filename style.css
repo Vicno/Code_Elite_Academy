@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+#header{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 4rem 6rem 0 6rem;
+    background-color: #1f2937;
+}
+#navigation{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    
+}
+#navigation a{
+    font-size: 18px;
+    color:#e5e7eb
+}
+.logo-image{
+    width: 15vh;
+    height: 15vh;    
+}
+#intro-section{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 6rem 4rem 6rem;
+    background-color: #1f2937;
+}
+.main-heading{
+    font-size: 48px;
+    font-weight: 700;
+    color: #f9faf8;
+}
+.intro-text{
+    font-size: 18px;
+    color:#e5e7eb
+}
+button{
+    background-color: #3882f6;
+}
