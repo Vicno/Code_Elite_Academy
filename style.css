@@ -30,6 +30,7 @@ nav a {
 .logo-image {
     width: 5rem;
     height: 5rem;
+    margin-right: 15rem;
 }
 
 #intro-section {
@@ -60,8 +61,13 @@ nav a {
 }
 
 .information-image {
-    width: 8rem;
-    height: 8rem;
+    width: 12rem;
+    height: 12rem;
+    transition: transform .2s;
+}
+
+.information-image:hover {
+    transform:scale(1.2);
 }
 
 .intro-text {
@@ -79,6 +85,7 @@ button {
     padding-right: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+    cursor: pointer;
 }
 
 table {
@@ -103,6 +110,12 @@ td {
     font-size: 36px;
     color: #1f2937;
     font-weight: 100;
+    font-style: italic;
+}
+
+#quote-author {
+    margin-left: 70rem;
+    font-weight: bold;
 }
 
 #call-to-action-section {
