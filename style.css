@@ -46,6 +46,24 @@ nav a {
     color: #f9faf8;
 }
 
+#information-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem 4rem 6rem;
+    align-items: center;
+}
+
+.information-header {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+.information-image {
+    width: 8rem;
+    height: 8rem;
+}
+
 .intro-text {
     font-size: 18px;
     color: #e5e7eb
@@ -61,4 +79,14 @@ button {
     padding-right: 1rem;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
+}
+
+table {
+    border-collapse: separate;
+    border-spacing: 3rem;
+}
+
+td {
+    text-align: center;
+    width: 10rem;
 }
