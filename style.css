@@ -26,6 +26,11 @@ nav a {
     padding: 1rem;
 }
 
+nav a:hover{
+    background-color: #364354;
+    text-decoration: underline;
+}
+
 .logo-image {
     width: 5rem;
     height: 5rem;
