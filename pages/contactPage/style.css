@@ -1,3 +1,8 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -18,16 +23,125 @@ nav {
 nav a {
     font-size: 18px;
     color: #e5e7eb;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 1rem;
+}
+
+nav a:hover{
+    background-color: #364354;
+    text-decoration: underline;
 }
 
 .logo-image {
     width: 5rem;
     height: 5rem;
+    margin-right: 15rem;
 }
 
-footer {
+#intro-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem 6rem 4rem 6rem;
+    background-color: #1f2937;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f9faf8;
+}
+
+#information-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem 4rem 6rem;
+    color: #f9faf8;
+    align-items: center;
+}
+
+#form-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid;
+    border-radius: 8px;
+    border-color: #1f2937;
+    padding: 1rem;
+    margin: 2rem;
+}
+.form-header-text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #1f2937;
+}
+.form-main-text {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+body{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+input, select, textarea, button {
+    font-size: 18px;
+    color: #1f2937;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.input-groups{
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    font-size: 18px;
+    color: #1f2937;
+}
+
+.button {
+    font-size: 1.2em;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.button:hover {
+    transform:scale(1.2);
+    background-color: #3882f6;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+.button, select{
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
