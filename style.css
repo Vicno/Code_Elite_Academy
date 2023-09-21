@@ -23,8 +23,12 @@ nav {
 nav a {
     font-size: 18px;
     color: #e5e7eb;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 1rem;
+}
+
+nav a:hover{
+    background-color: #364354;
+    text-decoration: underline;
 }
 
 .logo-image {

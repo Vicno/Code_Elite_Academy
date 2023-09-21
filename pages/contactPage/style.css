@@ -1,3 +1,13 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
 header {
     display: flex;
     flex-direction: row;
@@ -18,16 +28,158 @@ nav {
 nav a {
     font-size: 18px;
     color: #e5e7eb;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 1rem;
+}
+
+nav a:hover{
+    background-color: #364354;
+    text-decoration: underline;
 }
 
 .logo-image {
     width: 5rem;
     height: 5rem;
+    margin-right: 15rem;
 }
 
-footer {
+#intro-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem 6rem 4rem 6rem;
+    background-color: #1f2937;
+}
+
+.hero-main-text {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f9faf8;
+}
+
+#information-section {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem 4rem 6rem;
+    align-items: center;
+}
+
+#form-section {
+    display: flex;
+    align-items: center;
+}
+
+#check{
+    display: inline-block;
+}
+
+/* tag <fieldset>*/
+fieldset {
+    border: 0;
+}
+
+/* tag <body> */
+body{
+    font-size: 18px;
+    color: #e5e7eb;
+}
+
+/* tags <body>, <input>, <Select>, <textarea> e <button> */
+input, select, textarea, button {
+    font-size: 18px;
+    color: #e5e7eb;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+/* Elements "before" and "after" */
+.group:before, .group:after {
+    display: table;
+    border-collapse: separate;
+    border-spacing: 3rem;
+}
+
+/* Elements "after" */
+.group:after {
+    clear: both;
+}
+
+
+/* tag <label> */
+.fullname .email .choices .level label {
+    margin-bottom: 0.2em;
+    font-size: 18px;
+    color: #e5e7eb
+    display block;
+}
+
+/* tag <fieldset> */
+fieldset.group .fullname .email .choices .level {
+    float:  left;
+    margin-right: 1em;
+}
+
+/* tag <input> with text and email, tag <select> and tag <textarea>*/
+.fullname .email .choices .level input[type="text"], .fullname .email .choices .level input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: color #e5e7eb;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* with tags <select> e <option>*/
+.fullname .email .choices .level select option {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 6rem 4rem 6rem;
+    align-items: center;
+}
+
+/* with tags <input>, <select> and <textarea> "focus"*/
+.fullname .email .choices .level input:focus, .fullname .email .choices .level select:focus, .fullname .email .choices .level textarea:focus {
+    font-size: 36px;
+    font-weight: 700;
+    color: #1f2937;
+}
+
+/* button */
+.button {
+    font-size: 1.2em;
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+/* button with "hover" */
+.button:hover {
+    transform:scale(1.2);
+    background-color: #3882f6;
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* button and tag <select> */
+.button, select{
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+    align-items: center;
+}
+
+footer{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
