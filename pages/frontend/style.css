@@ -1,3 +1,7 @@
+* {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
 header {
     display: flex;
     flex-direction: row;
@@ -18,15 +22,120 @@ nav {
 nav a {
     font-size: 18px;
     color: #e5e7eb;
-    margin-left: 1rem;
-    margin-right: 1rem;
+    padding: 1rem;
+}
+nav a:hover{
+    background-color: #364354;
+    text-decoration: underline;
 }
 
 .logo-image {
     width: 5rem;
     height: 5rem;
 }
+#about-frontend {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem 6rem 4rem 6rem;
+    background-color: #1f2937;
+}
 
+.main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    color: #f9faf8;
+    padding-top:2rem;
+}
+span{
+    animation-name: languages;
+    animation-duration:3.5s;
+    animation-iteration-count:infinite;
+}
+@keyframes languages{
+    0% {
+        color:#00cc44;
+    }
+    25%{
+        color:#ff3333;
+    }
+    50%{
+        color:#1b4de4;
+    }
+    75%{
+        color:#ff4dd2;
+    }
+    100%{
+        color:#00cc44;
+    }
+}
+.frontend-defination{
+        font-size: 18px;
+        color: #e5e7eb;
+        line-height: 1.3;
+        padding: 2rem 0 2rem 0;
+}
+button {
+    background-color: #3882f6;
+    color: #e5e7eb;
+    border-radius: 8px;
+    margin-top: 1rem;
+    border: none;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    cursor: pointer;
+}
+
+.frontend-image{
+    width: 25rem;
+    height:20rem;
+}
+#detail{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 6rem 4rem 6rem;
+}
+.language-detail{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 3rem 2rem 3rem;
+}
+.language-image{
+    width: 8rem;
+    height: 8rem;
+}
+.language-heading{
+    margin:2rem 0 2rem 0;
+}
+.language-description{
+    font-size: 18px;
+    color: #1f2937;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+    
+}
+.testimonials{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #e5e7eb;
+    padding: 2rem 6rem 4rem 6rem;
+    
+}
+.testimonial-text,.testimonial-alumni{ 
+    font-size: 36px;
+    font-weight: light;
+    font-style: italic;
+    padding-top:1.5rem;
+}
 footer {
     display: flex;
     flex-direction: row;
