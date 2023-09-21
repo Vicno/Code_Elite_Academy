@@ -4,9 +4,135 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    
+    <header id="header">
+      <picture>
+        <a href="index.html">
+          <img
+            class="logo-image"
+            src="./images/Code Elite.png"
+            alt="logo of code elite academy"
+          >
+        </a>
+      </picture>
+      <nav id="navigation">
+        <a href="./index.html">Homepage</a>
+        <a href="./pages/frontend/frontend.html">Frontend</a>
+        <a href="./pages/backend/backend.html">Backend</a>
+        <a href="./pages/webDesign/webDesign.html">Webdesign</a>
+        <a href="./pages/contactPage/contactPage.html">Contact us</a>
+      </nav>
+    </header>
+    <section id="intro-section">
+      <div>
+        <h1 class="hero-main-text">Start your career in tech</h1>
+        <p class="intro-text">
+          Turn ambition into job-ready skills<br />
+          and become a Frontend developer, Backend developer<br />
+          or UX/UI web Designer from scratch.
+        </p>
+        <a href="./pages/contactPage/contactPage.html">
+          <button>
+            Apply now
+          </button>
+        </a>
+      </div>
+      <picture>
+        <img
+          class="intro-image"
+          src="./images/intro_image.jpeg"
+          alt="wallpaper of coding academy"
+        >
+      </picture>
+    </section>
+    <section id="information-section">
+      <h2 class="information-header">Choose your passion!</h2>
+      <table>
+        <tr>
+          <td>
+            <picture>
+              <a href="./pages/frontend/frontend.html">
+                <img
+                  class="information-image"
+                  src="./images/front_end.jpg"
+                  alt="image of frontend"
+                >
+              </a>
+              <p>click for more information about Frontend Development</p>
+            </picture>
+          </td>
+          <td>
+            <picture>
+              <a href="./pages/backend/backend.html">
+                <img
+                  class="information-image"
+                  src="./images/back_end.jpg"
+                  alt="image of backend"
+                >
+              </a>
+              <p>click for more information about Backend Development</p>
+            </picture>
+          </td>
+          <td>
+            <picture>
+              <a href="./pages/webDesign/webDesign.html">
+                <img
+                  class="information-image"
+                  src="./images/web_design.jpg"
+                  alt="image of web design"
+                >
+              </a>
+              <p>click for more infromation about UX/UI Design</p>
+            </picture>
+          </td>
+          <td>
+            <picture>
+              <a href="./pages/contactPage/contactPage.html">
+                <img
+                  class="information-image"
+                  src="./images/not_sure.jpg"
+                  alt="image not sure"
+                >
+              </a>
+              <p>Still not sure what to choose? Click to schedule a short call</p>
+            </picture>
+          </td>
+        </tr>
+      </table>
+    </section>
+    <section id="quote-section">
+      <p>
+        <q>
+          A good programmer is someone who always looks both ways before crossing a one-way street. 
+          </q><br/>
+          <p id="quote-author">
+            - Doug Linder
+          </p>
+      </p>
+    </section>
+    <section id="call-to-action-section">
+      <div>
+        <h3 class="call-to-action-main-text">Call to action! It's time!</h1>
+        <p class="call-to-action-text">
+          Keep in touch with us to be notified about the best new offers!
+        </p>
+      </div>
+      <a href="./pages/contactPage/contactPage.html">
+        <button>
+          Keep in touch
+        </button>
+      </a>
+    </section>
+    <footer>
+      Copyright ©
+    </footer>
   </body>
 </html>
