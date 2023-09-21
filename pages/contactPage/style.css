@@ -146,7 +146,7 @@ input, select, textarea, button {
 }
  
 .banner-image {
-    max-width: 60%;
+    max-width: 50%;
     height: auto;
 }
 
@@ -190,6 +190,7 @@ input, select, textarea, button {
 
 .intro-image {
     margin-right: 6rem;
+    width: 22rem;
 }
 
 footer{
