@@ -8,22 +8,12 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;0,700;0,900;1,300&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./style.css" />
-  </head>
-  <body></body>
-</html>
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <header id="header">
       <picture>
-        <a href="/index.html">
+        <a href="../../index.html">
           <img
             class="logo-image"
             src="./images/Code Elite.png"
@@ -32,10 +22,11 @@
         </a>
       </picture>
       <nav id="navigation">
-        <a href="/index.html">Homepage</a>
-        <a href="./pages/backend/backend.html">Backend</a>
-        <a href="./pages/webDesign/webDesign.html">Webdesign</a>
-        <a href="./pages/contactPage/contactPage.html">Contact us</a>
+        <a href="../../index.html">Homepage</a>
+        <a href="../frontend/frontend.html">Frontend</a>
+        <a href="../backend/backend.html">Backend</a>
+        <a href="../webDesign/webDesign.html">Webdesign</a>
+        <a href="../contactPage/contactPage.html">Contact us</a>
       </nav>
     </header>
     <section id="about-frontend">
@@ -44,25 +35,29 @@
         <p class="frontend-defination">
           Front-end web development is the development<br />
           of the graphical user interface of a website,<br />
-          through the use of HTML, CSS, and JavaScript,<br />
+          through the use of <span>HTML, CSS,</span> and
+          <span>JavaScript</span>,<br />
           so that users can view and interact with that website.
         </p>
+        <a href="../contactPage/contactPage.html"><button>Apply Now</button></a>
       </div>
+
       <picture>
         <img
           class="frontend-image"
-          src="https://res.cloudinary.com/dgpmuegqe/image/upload/v1492571172/rocket_design_k4nzbm.png"
+          src="./images/main-image.png"
+          alt="coding website sample image"
         />
       </picture>
     </section>
 
     <section id="detail">
-      <section class="language-detail" id="google">
+      <section class="language-detail">
         <picture>
           <img
             class="language-image"
-            src="https://cdn-icons-png.flaticon.com/512/1532/1532556.png"
-            alt=""
+            src="./images/html.png"
+            alt="html icon image"
           />
         </picture>
         <h3 class="language-heading">HTML</h3>
@@ -76,8 +71,8 @@
         <picture>
           <img
             class="language-image"
-            src="https://cdn-icons-png.flaticon.com/512/732/732190.png"
-            alt=""
+            src="./images/css.png"
+            alt="css icon image"
           />
         </picture>
         <h3 class="language-heading">CSS</h3>
@@ -87,12 +82,12 @@
           HTML or XML. CSS is a cornerstone technology of the World Wide Web
         </p>
       </section>
-      <section class="language-detail" id="customers">
+      <section class="language-detail">
         <picture>
           <img
             class="language-image"
-            src="https://www.edureka.co/blog/wp-content/uploads/2019/08/js-logo.png"
-            alt=""
+            src="./images/js-logo.png"
+            alt="javascript icon image"
           />
         </picture>
         <h3 class="language-heading">JAVASCRIPT</h3>
@@ -103,6 +98,15 @@
           for webpage behavior, often incorporating third-party libraries.
         </p>
       </section>
+    </section>
+    <section class="testimonials">
+      <p class="testimonial-text">
+        "Not only do you leave with a new skill set under your belt,<br />
+        you meet a significant amount of super talented people.<br />
+        This course in Frontend web developement is the best<br />
+        choice I have ever made."
+      </p>
+      <p class="testimonial-alumni">-Faheem Hassan</p>
     </section>
     <footer>Copyright ©</footer>
   </body>
