@@ -32,6 +32,7 @@ nav a:hover{
 .logo-image {
     width: 5rem;
     height: 5rem;
+    margin-right: 15rem;
 }
 #about-frontend {
     display: flex;
