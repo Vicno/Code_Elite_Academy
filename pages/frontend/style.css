@@ -288,3 +288,56 @@ footer {
 
     
 }
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    .logo-image {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    .frontend-image {
+        padding: 0px;
+    }
+
+    #detail-section {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 4rem 2rem 4rem;
+        margin-top: 3rem;
+        align-items: center;
+    }
+}
