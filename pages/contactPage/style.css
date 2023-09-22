@@ -103,6 +103,190 @@ footer {
     color: #e5e7eb;
 }
 
+@media only screen and (min-width: 0px) {
+
+    /* For desktop: */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 0.5rem;
+    }
+
+    picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-image {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    picture {
+        padding: 0px;
+    }
+
+    #intro-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 1rem 3rem 2rem 3rem;
+    }
+
+    .intro-text {
+        margin-top: 2rem;
+    }
+
+    #intro-section div {
+        margin-left: 0rem;
+    }
+
+    #information-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 6rem 4rem 6rem;
+        align-items: center;
+    }
+
+    #form-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 8px;
+        padding: 1rem;
+        margin: 2rem;
+    }
+
+    .form-header-text {
+        font-size: 48px;
+        font-weight: 700;
+    }
+
+    .form-main-text {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    body {
+        font-size: 18px;
+    }
+
+    input,
+    select,
+    textarea,
+    button {
+        font-size: 18px;
+        margin-left: 1rem;
+        margin-right: 1rem;
+    }
+
+    .input-groups {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+        font-size: 18px;
+    }
+
+    .button {
+        font-size: 1.2em;
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .button,
+    select {
+        margin-top: 1rem;
+        padding-left: 1rem;
+        padding-right: 1rem;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        align-items: center;
+    }
+
+    .banner-image {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .contact-form {
+        padding: 40px 0;
+        margin: 0 10px;
+    }
+
+    .form-container {
+        max-width: 90%;
+        margin: 0 auto;
+        padding: 20px;
+    }
+
+    .contact-form h2 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .form-container label {
+        display: block;
+        font-weight: bold;
+    }
+
+    .form-container input,
+    textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 1rem;
+        resize: vertical;
+    }
+
+    .input-groups.level {
+        margin-right: 0rem;
+        display:flex;
+        flex-direction: column;
+        align-self: center;
+    }
+
+    .intro-image {
+        margin-right: 0rem;
+        width: 22rem;
+    }
+
+}
+
 @media only screen and (min-width: 600px) {
 
     /* For desktop: */
@@ -210,6 +394,7 @@ footer {
 
     .input-groups {
         display: flex;
+        flex-direction: row;
         align-items: center;
         padding: 1rem;
         font-size: 18px;
@@ -386,6 +571,7 @@ footer {
 
     .input-groups {
         display: flex;
+        flex-direction: row;
         align-items: center;
         padding: 1rem;
         font-size: 18px;
@@ -421,7 +607,7 @@ footer {
     }
 
     .form-container {
-        max-width: 40%;
+        max-width: 60%;
         margin: 0 auto;
         padding: 20px;
     }
