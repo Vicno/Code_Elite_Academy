@@ -7,7 +7,6 @@ header {
     background-color: #1f2937;
 }
 
-
 nav a {
     color: #e5e7eb;
 }
@@ -25,7 +24,6 @@ nav a:hover{
     font-weight: 700;
     color: #f9faf8;
 }
-
 
 .information-header {
     font-weight: 700;
@@ -51,7 +49,6 @@ button {
     border: none;
     cursor: pointer;
 }
-
 
 #quote-section {
     background-color: #e5e7eb;
@@ -85,6 +82,7 @@ footer{
 
 @media only screen and (min-width: 0px) {
     /*For mobile*/
+
     header {
         display: flex;
         flex-direction: column;
@@ -112,6 +110,7 @@ footer{
         flex-direction: column;
         align-items: center;
     }
+
     .logo-image {
         width: 4rem;
         height: 4rem;
@@ -127,7 +126,6 @@ footer{
         margin: 0;
     }
 
-    
     #intro-section {
         display: flex;
         flex-direction: column;
@@ -211,6 +209,7 @@ footer{
 
 @media only screen and (min-width: 600px) {
     /*For tablet*/
+
     header {
         display: flex;
         flex-direction: row;
@@ -330,6 +329,7 @@ footer{
 
 @media only screen and (min-width: 768px) {
     /*For Desktop*/
+    
     header {
         display: flex;
         flex-direction: row;
