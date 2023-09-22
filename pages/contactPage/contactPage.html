@@ -14,7 +14,7 @@
             class="logo-image"
             src="./images/Code Elite.png"
             alt="logo of code elite academy"
-          />
+          >
         </a>
       </picture>
       <nav id="navigation">
@@ -27,7 +27,13 @@
     </header>
     <section id="intro-section">
       <div>
-        <h1 class="hero-main-text">Contact US!</h1>
+        <picture>
+          <img
+            class="banner-image" 
+            src="./images/contactUs-image.png"
+            alt="Welcome to our Contact Us page"
+          >
+        </picture>
         <p class="intro-text">
           Develop your skills and grow professionaly <br />
           with our courses and start your journey<br />
@@ -37,73 +43,60 @@
       <picture>
         <img
           class="intro-image"
-          src="./images/intro_image.jpeg"
+          src="./images/intro_image.png"
           alt="wallpaper of coding academy"
-        />
+        >
       </picture>
     </section>
-    <section id="form-section">
-      <form>
-        <h2 class="form-header-text">Contact Us!</h2>
-        <!-- full name class -->
-        <div class="input-groups">
-          <label><strong>Full Name:</strong></label>
-          <input type="text" name="full name" id="full name" required />
-        </div>
+    <section class="contact-form">
+      <div class="form-container">
+        <h2>Your Details</h2>
+        <form action="#" method="POST" id="form-section">
+          <div class="input-groups level">
+            <label><strong>Level: </strong></label>
+            <select id="Level" required>
+              <option selected disabled value="">Select</option>
+              <option>Junior</option>
+              <option>Mid-Level</option>
+              <option>Senior</option>
+            </select>
+          </div><br>
 
-        <!-- email class-->
-        <div class="input-groups">
-          <label><strong>E-mail:</strong></label>
-          <input type="email" name="email" id="email" required />
-        </div>
+          <label for="name">Full-Name: </label>
+          <input type="text" id="name" name="name" required>
 
-        <!-- three options of buttons to choose (radio button) and css choices class -->
-        <div class="input-groups">
-          <label><strong>Which one is your favorite? </strong></label>
-          <label>
-            <input
-              type="radio"
-              name="devweb"
-              value="frontend"
-              checked
-            />Front-end
-          </label>
-          <label>
-            <input type="radio" name="devweb" value="backend" />Back-end
-          </label>
-          <label>
-            <input type="radio" name="devweb" value="web design" />Web Design
-          </label>
-        </div>
+          <label for="email">E-mail: </label>
+          <input type="email" id="email" name="email" required>
 
-        <!-- 3 options of level to choose (select option) and css -->
-        <div class="input-groups">
-          <label><strong>Level: </strong></label>
-          <select id="Level" required>
-            <option selected disabled value="">Select</option>
-            <option>Junior</option>
-            <option>Mid-Level</option>
-            <option>Senior</option>
-          </select>
-        </div>
+          <label for="phone">Phone: </label>
+          <input type="tel" id="phone" name="phone">
 
-        <!-- box -->
-        <div class="input-groups">
-          <br />
-          <label
-            ><strong>Let us know a little bit more about you: </strong></label
-          >
-          <textarea
-            rows="6"
-            style="width: 26em"
-            id="notes"
-            name="notes"
-          ></textarea>
-        </div>
+          <label for="message">Let us know more about you </label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-        <!-- Button to send the form -->
-        <button class="button" type="submit" onsubmit="">Send</button>
-      </form>
+          <div class="input-groups">
+            <label><strong>Which one is your favorite? </strong></label>
+            <label>
+              <input
+                type="radio"
+                name="devweb"
+                value="frontend"
+                checked
+              >
+                Front-end
+            </label>
+            <label>
+              <input type="radio" name="devweb" value="backend">
+                Back-end
+            </label>
+            <label>
+              <input type="radio" name="devweb" value="web design">
+                Web Design
+            </label>
+          </div>
+          <button class="button" type="submit" onsubmit="">Send</button>
+        </form>
+      </div>
     </section>
     <section id="Whatsapp-Button">
       <link
@@ -116,10 +109,10 @@
         target="_blank"
         href="https://api.whatsapp.com/send?phone=5511984728113"
       >
-        <div class="rwb-tooltip">Talk to us!</div>
+      <div class="rwb-tooltip">Talk to us!</div>
         <img
           src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"
-        />
+        >
       </a>
     </section>
 
