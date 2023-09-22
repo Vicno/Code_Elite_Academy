@@ -113,7 +113,7 @@ footer {
     /* For Mobile: */
     header {
         display: flex;
-        
+        flex-direction: column;
         justify-content: space-around;
         padding-left: 2rem;
         padding-right: 2rem;
@@ -129,13 +129,18 @@ footer {
     }
 
     nav a {
-        font-size: 18px;
-        padding: 1rem;
+        font-size: 10px;
+        padding: 0.5rem;
     }
 
+    picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
     .logo-image {
-        width: 1rem;
-        height: 1rem;
+        width: 4rem;
+        height: 4rem;
     }
 
     footer {
@@ -178,7 +183,7 @@ footer {
     }
 
     .backend-main-text {
-        font-size: 48px;
+        font-size: 28px;
         font-weight: 700;
         margin-top: 2.4rem;
         text-align: center;
@@ -197,11 +202,12 @@ footer {
     }
 
     .image-link {
-        width: 70rem;
-        height: 25rem;
+        width: 20rem;
+        height: 40rem;
         padding: 1rem;
         align-self: center;
         display: flex;
+        flex-direction: column;
     }
 
     #explore-section {
@@ -230,7 +236,7 @@ footer {
 
     table {
         border-collapse: separate;
-        border-spacing: 3rem;
+        border-spacing: 0rem;
     }
 
     td {
@@ -242,7 +248,7 @@ footer {
         display: flex;
         flex-direction: column;
         border-radius: 5px;
-        width: 18rem;
+        width: 7rem;
     }
 
     .card>img {
@@ -258,7 +264,7 @@ footer {
     }
 
     .card h3 {
-        font-size: 1.4rem;
+        font-size: 1rem;
         margin-top: 0;
     }
 
@@ -290,9 +296,14 @@ footer {
     }
 
     .flip-card {
-        width: 150px;
-        height: 150px;
+        width: 3rem;
+        height: 3rem;
         perspective: 1000px;
+    }
+
+    .image-flip-card {
+        width:  3rem;
+        height:  3rem;
     }
 
     .flip-card-inner {
@@ -313,10 +324,11 @@ footer {
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+        font-size: 8px;
     }
 
     #tech-title {
-        font-size: 28px;
+        font-size: 18px;
         font-weight: 800;
     }
 }
@@ -416,6 +428,7 @@ footer {
         padding: 1rem;
         align-self: center;
         display: flex;
+        flex-direction: row;
     }
 
     #explore-section {
@@ -637,6 +650,7 @@ footer {
         padding: 1rem;
         align-self: center;
         display: flex;
+        flex-direction: row;
     }
 
     #explore-section {
