@@ -313,7 +313,206 @@ footer {
 
 @media only screen and (min-width: 600px) {
 
-    /* For Tablet: */
+    /* For tablet: */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 1rem;
+    }
+
+    .logo-image {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    picture {
+        padding: 0px;
+    }
+
+    #introduction-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem 2rem 4rem;
+        margin-top: 3rem;
+        align-items: center;
+    }
+
+    .image-introduction {
+        width: 25rem;
+        align-items: center;
+    }
+
+    .webdesign-main-text {
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 2.4rem;
+        text-align: center;
+    }
+
+    #webdesign-text {
+        text-align: center;
+        font-size: 14px;
+    }
+
+    #whylearn-text {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 1rem;
+    }
+
+    .image-link {
+        width: 35rem;
+        height: 30rem;
+        padding: 1rem;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #motivate-text {
+        background-size: 200%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0rem;
+    }
+
+    td {
+        text-align: center;
+        width: 10rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 10rem;
+        margin-top: 2rem;
+    }
+
+    .card>img {
+        border-radius: 5px 5px 0 0;
+        margin-top: 1rem;
+        height: 150px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    .card p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .card a {
+        padding: 10px 20px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+    #course-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem 2rem 4rem;
+        align-items: center;
+    }
+
+    #links-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 6rem 4rem 6rem;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .flip-card {
+        width: 5rem;
+        height: 5rem;
+        perspective: 1000px;
+    }
+
+    .logo-flip-card {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        font-size: 16px;
+    }
+
+    #tech-title {
+        font-size: 18px;
+        font-weight: 800;
+    }
+
+    .image-flip-card {
+        width:  5rem;
+        height:  5rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
     header {
         display: flex;
         flex-direction: row;
@@ -365,8 +564,10 @@ footer {
     }
 
     .image-introduction {
-        width: 30rem;
-        align-items: center;
+        width: 38rem;
+        height: 25rem;
+        margin-top: 2.3rem;
+        margin-right: 0rem;
     }
 
     .webdesign-main-text {
@@ -376,23 +577,23 @@ footer {
     }
 
     #webdesign-text {
-        text-align: center;
         font-size: 18px;
+        margin-left: 2rem;
     }
 
     #whylearn-text {
-        text-align: center;
         font-size: 28px;
-        margin-top: 1rem;
+        margin-top: 4rem;
+        margin-left: 2rem;
     }
 
     .image-link {
-        width: 45rem;
+        width: 60rem;
         height: 30rem;
         padding: 1rem;
         align-self: center;
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
     }
 
     #motivate-text {
