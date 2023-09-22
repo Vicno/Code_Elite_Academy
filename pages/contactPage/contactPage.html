@@ -14,16 +14,108 @@
             class="logo-image"
             src="./images/Code Elite.png"
             alt="logo of code elite academy"
-          />
+          >
         </a>
       </picture>
       <nav id="navigation">
+        <a href="../../index.html">Homepage</a>
         <a href="../../pages/frontend/frontend.html">Frontend</a>
         <a href="../../pages/backend/backend.html">Backend</a>
         <a href="../../pages/webDesign/webDesign.html">Webdesign</a>
         <a href="../../pages/contactPage/contactPage.html">Contact us</a>
       </nav>
     </header>
+    <section id="intro-section">
+      <div>
+        <picture>
+          <img
+            class="banner-image" 
+            src="./images/contactUs-image.png"
+            alt="Welcome to our Contact Us page"
+          >
+        </picture>
+        <p class="intro-text">
+          Develop your skills and grow professionaly <br />
+          with our courses and start your journey<br />
+          TODAY!
+        </p>
+      </div>
+      <picture>
+        <img
+          class="intro-image"
+          src="./images/intro_image.png"
+          alt="wallpaper of coding academy"
+        >
+      </picture>
+    </section>
+    <section class="contact-form">
+      <div class="form-container">
+        <h2>Your Details</h2>
+        <form action="#" method="POST" id="form-section">
+          <div class="input-groups level">
+            <label><strong>Level: </strong></label>
+            <select id="Level" required>
+              <option selected disabled value="">Select</option>
+              <option>Junior</option>
+              <option>Mid-Level</option>
+              <option>Senior</option>
+            </select>
+          </div><br>
+
+          <label for="name">Full-Name: </label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">E-mail: </label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone: </label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="message">Let us know more about you </label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+
+          <div class="input-groups">
+            <label><strong>Which one is your favorite? </strong></label>
+            <label>
+              <input
+                type="radio"
+                name="devweb"
+                value="frontend"
+                checked
+              >
+                Front-end
+            </label>
+            <label>
+              <input type="radio" name="devweb" value="backend">
+                Back-end
+            </label>
+            <label>
+              <input type="radio" name="devweb" value="web design">
+                Web Design
+            </label>
+          </div>
+          <button class="button" type="submit" onsubmit="">Send</button>
+        </form>
+      </div>
+    </section>
+    <section id="Whatsapp-Button">
+      <link
+        rel="stylesheet"
+        href="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-button.css"
+      />
+      <a
+        id="robbu-whatsapp-button"
+        class="right"
+        target="_blank"
+        href="https://api.whatsapp.com/send?phone=5511984728113"
+      >
+      <div class="rwb-tooltip">Talk to us!</div>
+        <img
+          src="https://cdn.positus.global/production/resources/robbu/whatsapp-button/whatsapp-icon.svg"
+        >
+      </a>
+    </section>
+
     <footer>Copyright ©</footer>
   </body>
 </html>
