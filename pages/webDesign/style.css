@@ -4,27 +4,11 @@
 }
 
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 2rem;
-    padding-right: 2rem;
     background-color: #1f2937;
-    align-content: center;
-    margin: 0;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 nav a {
-    font-size: 18px;
     color: #e5e7eb;
-    padding: 1rem;
 }
 
 nav a:hover{
@@ -32,81 +16,34 @@ nav a:hover{
     text-decoration: underline;
 }
 
-.logo-image {
-    width: 5rem;
-    height: 5rem;
-    margin-right: 15rem;
-}
-
 footer {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
     background-color: #1f2937;
-    align-content: center;
     color: #e5e7eb;
 }
 
 #introduction-section {
-    display: flex;
-    flex-direction: row;
-    padding: 2rem 6rem 4rem 6rem;
     background-color: #e5e7eb;
-    margin-top: 3rem;
-}
-
-.image-introduction {
-    width: 36rem;
-    margin-left: 8rem;
-    margin-top: 2.3rem;
 }
 
 .webdesign-main-text {
-    font-size: 48px;
-    font-weight: 700;
     color: #1f2937;
-    margin-left: 16rem;
-    margin-top: 2.4rem;
 }
 
 #webdesign-text {
-    text-align: center;
-    margin-left: 6rem;
-    margin-top: 3rem;
-    height: 20rem;
-    width: 20rem;
     color: #e5e7eb;
-    font-size: 18px;
 }
 
 #whylearn-text {
-    text-align: center;
     color: #e5e7eb;
-    font-size: 1.7rem;
-    margin-left: 6rem;
-    margin-top: 2rem;
 }
 
 .image-link {
     background-color: #1f2937;
-    width: 70rem;
-    height: 25rem;
-    margin-left: 7rem;
-    display: flex;
 }
 
 #motivate-text {
     color: white;
     background: linear-gradient(to left, salmon 50%, rgb(173, 182, 187) 50%) right;
-    background-size: 200%;
-    transition: .5s ease-out;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    font-size: 28px;
-    font-weight: 800;
-    text-align: center;
 }
 
 #motivate-text:hover {
@@ -114,12 +51,8 @@ footer {
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 5px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
-    width: 18rem;
     background-color: #fff;
 }
 
@@ -127,32 +60,10 @@ footer {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
-.card>img {
-    border-radius: 5px 5px 0 0;
-    height: 150px;
-    width: 100%;
-    object-fit: contain;
-}
-
-.card-content {
-    padding: 20px;
-}
-
-.card h3 {
-    font-size: 1.4rem; margin-top: 0;
-}
-
-.card p {
-    font-size: 1rem; margin-bottom: 10px;
-}
-
 .card a {
-    padding: 10px 20px;
     background-color: #3882f6;
     border-radius: 10px;
     color: white;
-    text-align: center;
-    display: inline-block;
     text-decoration: none;
     transition: background-color 0.4s ease-in-out;
 }
@@ -161,44 +72,11 @@ footer {
     background-color: #4b4a4a;
 }
 
-#course-section {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 6rem 4rem 6rem;
-    align-items: center;
-    margin-top: 7rem;
-}
-
-#links-section {
-    display: flex;
-    flex-direction: column;
-    padding: 2rem 6rem 4rem 6rem;
-    align-items: center;
-    margin-top: 2rem;
-}
-
-table {
-    border-collapse: separate;
-    border-spacing: 3rem;
-}
-
-td {
-    text-align: center;
-    width: 10rem;
-}
-
 .flip-card {
     background-color: transparent;
-    width: 150px;
-    height: 150px;
-    perspective: 1000px;
 }
   
 .flip-card-inner {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    text-align: center;
     transition: transform 0.6s;
     transform-style: preserve-3d;
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
@@ -206,14 +84,6 @@ td {
   
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
-}
-  
-.flip-card-front, .flip-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
 }
   
 .flip-card-front {
@@ -228,7 +98,415 @@ td {
 }
 
 #tech-title {
-    font-size: 28px;
-    font-weight: 800;
     color: #1f2937;
 }
+
+@media only screen and (min-width: 0px) {
+
+    /* For Mobile: */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 0.5rem;
+    }
+
+    picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .logo-image {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    picture {
+        padding: 0px;
+    }
+
+    #introduction-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem 2rem 4rem;
+        margin-top: 3rem;
+        align-items: center;
+    }
+
+    .image-introduction {
+        width: 100%;
+        height: 100%;
+        margin-top: 2rem;
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .webdesign-main-text {
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 2.4rem;
+        text-align: center;
+    }
+
+    #webdesign-text {
+        text-align: center;
+        padding: 1rem;
+        font-size: 18px;
+    }
+
+    #whylearn-text {
+        text-align: center;
+        font-size: 24px;
+        margin-top: 2rem;
+    }
+
+    .image-link {
+        width: 20rem;
+        height: 40rem;
+        padding: 1rem;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #motivate-text {
+        background-size: 200%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 18px;
+        font-weight: 800;
+        text-align: center;
+    }
+    
+    #explore-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem 2rem 4rem;
+        align-items: center;
+    }
+    
+    table {
+        border-collapse: separate;
+        border-spacing: 0rem;
+    }
+
+    td {
+        text-align: center;
+        width: 10rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 7rem;
+    }
+
+    .card>img {
+        border-radius: 5px 5px 0 0;
+        margin-top: 1rem;
+        height: 150px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1rem;
+        margin-top: 0;
+    }
+
+    .card p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .card a {
+        padding: 10px 20px;
+        text-align: center;
+        display: inline-block;
+    }
+
+    #course-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem 2rem 4rem;
+        align-items: center;
+    }
+
+    #links-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 6rem 4rem 6rem;
+        align-items: center;
+        margin-top: 2rem;
+    }
+
+    .flip-card {
+        width: 3rem;
+        height: 3rem;
+        perspective: 1000px;
+    }
+
+    .logo-flip-card {
+        width: 3rem;
+        height: 3rem;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        font-size: 8px;
+    }
+
+    #tech-title {
+        position: absolute;
+        font-size: 18px;
+        font-weight: 800;
+        margin-top: -4rem;
+        text-align: center;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For Tablet: */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    .logo-image {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    picture {
+        padding: 0px;
+    }
+
+    #introduction-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 0rem 1rem 0rem;
+        margin-top: 3rem;
+        align-items: center;
+    }
+
+    .image-introduction {
+        width: 30rem;
+        align-items: center;
+    }
+
+    .webdesign-main-text {
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 2.4rem;
+    }
+
+    #webdesign-text {
+        text-align: center;
+        font-size: 18px;
+    }
+
+    #whylearn-text {
+        text-align: center;
+        font-size: 28px;
+        margin-top: 1rem;
+    }
+
+    .image-link {
+        width: 45rem;
+        height: 30rem;
+        padding: 1rem;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #motivate-text {
+        background-size: 200%;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        font-size: 28px;
+        font-weight: 800;
+        text-align: center;
+    }
+
+    table {
+        border-collapse: separate;
+        border-spacing: 0rem;
+    }
+
+    td {
+        text-align: center;
+        width: 10rem;
+    }
+
+    .card {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 15rem;
+        margin-top: 2rem;
+    }
+
+    .card>img {
+        border-radius: 5px 5px 0 0;
+        margin-top: 1rem;
+        height: 150px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .card-content {
+        padding: 20px;
+    }
+
+    .card h3 {
+        font-size: 1.4rem;
+        margin-top: 0;
+    }
+
+    .card p {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .card a {
+        padding: 10px 20px;
+        text-align: center;
+        display: inline-block;
+        border-radius: 10px;
+    }
+
+
+    #course-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem 2rem 4rem;
+        align-items: center;
+    }
+
+    #links-section {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 6rem 4rem 6rem;
+        align-items: center;
+        margin-top: 5rem;
+    }
+
+    .flip-card {
+        width: 6.5rem;
+        height: 6.5rem;
+        perspective: 1000px;
+    }
+
+    .logo-flip-card {
+        width: 6.5rem;
+        height: 6.5rem;
+    }
+
+    .flip-card-inner {
+        position: relative;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+    }
+
+    .flip-card:hover .flip-card-inner {
+        transform: rotateY(180deg);
+    }
+
+    .flip-card-front,
+    .flip-card-back {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        -webkit-backface-visibility: hidden;
+        backface-visibility: hidden;
+        font-size: 16px;
+    }
+
+    #tech-title {
+        font-size: 28px;
+        font-weight: 800;
+    }
+
+    .image-flip-card {
+        width:  5rem;
+        height:  5rem;
+    }
+}
+
