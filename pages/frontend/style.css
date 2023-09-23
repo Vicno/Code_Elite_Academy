@@ -69,22 +69,9 @@ button {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 6rem 4rem 6rem;
     align-items: center;
 }
 
-.language-detail {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 1rem 3rem 2rem 3rem;
-}
-
-.language-image {
-    width: 15rem;
-    height: 15rem;
-}
 
 .language-title {
     margin:2rem 0 2rem 0;
@@ -96,6 +83,14 @@ button {
     font-style: italic;
     line-height: 1.2;
     text-align: center;
+}
+
+.language-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 3rem 2rem 3rem;
 }
 
 .language-heading {
@@ -187,11 +182,15 @@ footer {
         text-align: center;
         font-size: 14px;
     }
-    
 
-    .language-heading {
-        font-size: 18px;
+    .language-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem 3rem 2rem 3rem;
     }
+    
 
     .testimonial-text,.testimonial-alumni {
         font-size: 24px;
@@ -214,6 +213,7 @@ footer {
 
     #detail-section {
         flex-direction: column;
+        padding: 2rem 6rem 4rem 6rem;
     }
 
     #about-frontend {
@@ -228,6 +228,11 @@ footer {
         text-align: center;
         font-size: 18px;
         margin-top: 2rem;
+    }
+
+    .language-image {
+        width: 15rem;
+        height: 15rem;
     }
 }
 
@@ -254,6 +259,22 @@ footer {
     nav a {
         font-size: 12px;
         padding: 1rem;
+    }
+
+    .logo-image {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
     }
 
     picture {
@@ -286,10 +307,6 @@ footer {
         font-size: 18px;
     }
 
-    .language-heading {
-        font-size: 18px;
-    }
-
     .testimonial-text,.testimonial-alumni {
         font-size: 28px;
     }
@@ -300,6 +317,14 @@ footer {
         line-height: 1.2;
         text-align: center;
         font-size: 18px;
+    }
+
+    .language-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem 3rem 2rem 3rem;
     }
 
     footer {
@@ -326,12 +351,18 @@ footer {
 
     #detail-section {
         flex-direction: column;
+        padding: 1rem 3rem 2rem 3rem;
     }
 
     .language-heading {
         text-align: center;
         font-size: 18px;
         margin-top: 2rem;
+    }
+
+    .language-image {
+        width: 10rem;
+        height: 10rem;
     }
 }
 
@@ -360,13 +391,6 @@ footer {
         padding: 1rem;
     }
 
-    #about-frontend {
-        display: flex;
-        flex-direction: row;
-        padding: 2rem 4rem 2rem 4rem;
-        align-items: center;
-    }
-
     .logo-image {
         width: 5rem;
         height: 5rem;
@@ -383,7 +407,37 @@ footer {
         margin: 0;
     }
 
+    #about-frontend {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 4rem 2rem 4rem;
+        align-items: center;
+    }
+
+    .language-description {
+        font-weight: 100;
+        font-style: italic;
+        line-height: 1.2;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .language-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem 1rem 1rem 1rem;
+        width: 30%;
+    }
+
     .frontend-image {
+        padding: 0px;
+        width: 100%;
+        height:fit-content ;
+    }
+
+    picture {
         padding: 0px;
     }
 
@@ -399,6 +453,11 @@ footer {
         text-align: center;
         font-size: 28px;
         margin-top: 2rem;
+    }
+
+    .language-image {
+        width: 15rem;
+        height: 15rem;
     }
 
     .testimonial-text,.testimonial-alumni {

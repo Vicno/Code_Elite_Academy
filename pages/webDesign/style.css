@@ -388,7 +388,7 @@ footer {
     }
 
     .image-link {
-        width: 35rem;
+        width: 34rem;
         height: 30rem;
         padding: 1rem;
         align-self: center;
@@ -552,7 +552,7 @@ footer {
     }
 
     picture {
-        padding: 0px;
+        padding: 0px; 
     }
 
     #introduction-section {
@@ -562,10 +562,14 @@ footer {
         margin-top: 3rem;
         align-items: center;
     }
+    
+    #introduction-section picture {
+        width: 160rem;
+    }
 
     .image-introduction {
-        width: 38rem;
-        height: 25rem;
+        width: 100%;
+        height: 80%;
         margin-top: 2.3rem;
         margin-right: 0rem;
     }
@@ -588,7 +592,8 @@ footer {
     }
 
     .image-link {
-        width: 60rem;
+        width: 700px;
+        min-width: 60%;
         height: 30rem;
         padding: 1rem;
         align-self: center;
