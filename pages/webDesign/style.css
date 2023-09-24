@@ -106,10 +106,14 @@ footer {
     background-color: #fff;
 }
 
+.card-uni {
+    background-color: #fff;
+}
+
 .card-expl {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     transition: box-shadow 0.3s ease-in-out;
-    background-color: #fff;
+    background-color: rgb(215, 162, 156);
 }
 
 .card:hover {
@@ -614,6 +618,31 @@ footer {
         margin-top: 5rem;
         padding-bottom: 0.5rem;
     }
+    .uni-section {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .card-uni {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        width: 25rem;
+        height: auto;
+        margin-top: 5.5rem;
+        margin-left: 3rem;
+        text-align: center;
+    }
+
+    .card-uni>img {
+        border-radius: 5px 5px 0 0;
+        margin-top: 1rem;
+        height: 180px;
+        width: 100%;
+        object-fit: contain;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -637,7 +666,7 @@ footer {
     }
 
     nav a {
-        font-size: 18px;
+        font-size: 12px;
         padding: 1rem;
     }
 
@@ -655,7 +684,6 @@ footer {
         padding-bottom: 2rem;
         align-content: center;
         margin: 0;
-        margin-top: 6rem;
     }
 
     picture {
@@ -664,54 +692,51 @@ footer {
 
     #introduction-section {
         display: flex;
-        flex-direction: row;
-        padding: 2rem 0rem 1rem 0rem;
+        flex-direction: column;
+        padding: 2rem 4rem 2rem 4rem;
         margin-top: 3rem;
         align-items: center;
     }
 
-    .image-introduction {
-        width: 38rem;
-        height: 25rem;
-        margin-top: 2.3rem;
-        margin-right: 0rem;
-    }
-
     .webdesign-main-text {
-        font-size: 48px;
+        font-size: 38px;
         font-weight: 700;
-        margin-left: 13.5rem;
-        margin-top: 4rem;
+        margin-top: 2.4rem;
     }
 
     .imagination-text {
-        font-size: 48px;
-        margin-left: -5.5rem;
-        margin-top: 8rem;
+        font-size: 38px;
+        margin-top: 2rem;
         font-weight: bold;
         -webkit-animation: colorchange 20s infinite alternate;
+        text-align: center;
     }
 
     #webdesign-text {
-        font-size: 18px;
         text-align: center;
+        font-size: 18px;
     }
 
     #whylearn-text {
-        font-size: 28px;
-        margin-top: 5rem;
         text-align: center;
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .text-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .image-link {
-        width: 28rem;
-        height: 100rem;
+        width: 45rem;
+        height: auto;
         padding: 1rem;
+        align-self: center;
         display: flex;
         flex-direction: column;
-        margin-left: 13.5rem;
         margin-top: -5rem;
-        align-items: center;
     }
 
     #motivate-text {
@@ -724,20 +749,21 @@ footer {
         text-align: center;
     }
 
-    .course-explanation {
-        display: flex;
-        flex-direction: column;
+    .explanation-section {
+        text-align: center;
+        padding: 0rem 6rem 0rem 6rem;
     }
 
     .tech-logo {
         display: flex;
         flex-wrap: wrap;
-        margin-top: -8.7rem;
-        width: 710px;
+        margin-top: -79rem;
+        width: 200px;
+        margin-right: -6rem;
     }
 
     .tech-logo > div {
-        margin: 10px;
+        margin: 12px;
         text-align: center;
     }
 
@@ -745,8 +771,11 @@ footer {
         display: flex;
         flex-direction: column;
         border-radius: 5px;
-        width: 20rem;
+        width: 25rem;
+        height: 22rem;
         margin-top: 5.5rem;
+        margin-left: 3rem;
+        text-align: center;
     }
 
     .card>img {
@@ -762,13 +791,7 @@ footer {
         flex-direction: column;
         border-radius: 5px;
         width: 37rem;
-        margin-top: 5rem;
         align-items: center;
-    }
-
-    .card-expl.numb-2 {
-        margin-top: 4.5rem;
-
     }
 
     .card-content {
@@ -811,7 +834,7 @@ footer {
 
     #course-section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 2rem 4rem 2rem 4rem;
         align-items: center;
     }
@@ -856,10 +879,39 @@ footer {
         font-size: 18px;
     }
 
+    .uni-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .uni-section>div {
+        width: 200rem;
+        margin: 12px;
+    }
+
+    .card-uni {
+        border-radius: 5px;
+        min-width: 12rem;
+        height: 15rem;
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .card-uni>img {
+        border-radius: 5px 5px 0 0;
+        margin-top: 1rem;
+        height: 180px;
+        width: 100%;
+        object-fit: contain;
+    }
+
     .down-line {
         background-color: #1f2937;
         padding-bottom: 0.5rem;
-        margin-top: -1rem;
+        margin-top: -1.5rem;
     }
 
     .up-line {
