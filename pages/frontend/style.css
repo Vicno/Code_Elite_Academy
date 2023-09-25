@@ -3,56 +3,31 @@
     font-family: 'Roboto', sans-serif;
 }
 header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding-left: 2rem;
-    padding-right: 2rem;
     background-color: #1f2937;
-    align-content: center;
-}
-
-nav {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    align-items: center;
 }
 
 nav a {
-    font-size: 18px;
     color: #e5e7eb;
-    padding: 1rem;
 }
 nav a:hover{
     background-color: #364354;
     text-decoration: underline;
 }
 
-.logo-image {
-    width: 5rem;
-    height: 5rem;
-    margin-right: 15rem;
-}
 #about-frontend {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    padding: 2rem 6rem 4rem 6rem;
     background-color: #1f2937;
 }
 
 .main-heading {
-    font-size: 48px;
-    font-weight: 700;
     color: #f9faf8;
-    padding-top:2rem;
 }
-span{
+
+span {
     animation-name: languages;
     animation-duration:3.5s;
     animation-iteration-count:infinite;
 }
+
 @keyframes languages{
     0% {
         color:#00cc44;
@@ -70,12 +45,13 @@ span{
         color:#00cc44;
     }
 }
+
 .frontend-defination{
-        font-size: 18px;
         color: #e5e7eb;
         line-height: 1.3;
         padding: 2rem 0 2rem 0;
 }
+
 button {
     background-color: #3882f6;
     color: #e5e7eb;
@@ -89,54 +65,60 @@ button {
     cursor: pointer;
 }
 
-.frontend-image{
-    width: 25rem;
-    height:20rem;
-}
-#detail{
+#detail-section {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2rem 6rem 4rem 6rem;
+    align-items: center;
 }
-.language-detail{
+
+
+.language-title {
+    margin:2rem 0 2rem 0;
+}
+
+.language-description {
+    color: #1f2937;
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+}
+
+.language-detail {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
     padding: 1rem 3rem 2rem 3rem;
 }
-.language-image{
-    width: 8rem;
-    height: 8rem;
-}
-.language-heading{
-    margin:2rem 0 2rem 0;
-}
-.language-description{
-    font-size: 18px;
+
+.language-heading {
+    font-weight: 800;
     color: #1f2937;
-    font-weight: 100;
-    font-style: italic;
-    line-height: 1.2;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    padding-top:3rem;
     
 }
-.testimonials{
+
+.testimonials {
     display:flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: #e5e7eb;
     padding: 2rem 6rem 4rem 6rem;
+    margin-top: 10rem;
     
 }
-.testimonial-text,.testimonial-alumni{ 
-    font-size: 36px;
+
+.testimonial-text,.testimonial-alumni { 
     font-weight: light;
     font-style: italic;
-    padding-top:1.5rem;
+    padding-top: 1.5rem;
 }
+
 footer {
     display: flex;
     flex-direction: row;
@@ -146,4 +128,339 @@ footer {
     background-color: #1f2937;
     align-content: center;
     color: #e5e7eb;
+}
+
+@media only screen and (min-width: 0px) {
+
+    /* For Mobile: */
+    header {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 10px;
+        padding: 0.5rem;
+    }
+
+    picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 4rem;
+        height: 4rem;
+    }
+
+    .main-heading {
+        font-size: 28px;
+        font-weight: 700;
+    }
+
+    .frontend-defination {
+        font-size: 18px;
+    }
+
+    .language-description {
+        font-weight: 100;
+        font-style: italic;
+        line-height: 1.2;
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .language-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem 3rem 2rem 3rem;
+    }
+    
+
+    .testimonial-text,.testimonial-alumni {
+        font-size: 24px;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    .frontend-image {
+        width: 25rem;
+        height:20rem;
+    }
+
+    #detail-section {
+        flex-direction: column;
+        padding: 2rem 6rem 4rem 6rem;
+    }
+
+    #about-frontend {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        padding: 2rem 6rem 4rem 6rem;
+        background-color: #1f2937;
+    }
+
+    .language-heading {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+
+    .language-image {
+        width: 15rem;
+        height: 15rem;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+
+    /* For Tablet: */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 12px;
+        padding: 1rem;
+    }
+
+    .logo-image {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    picture {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .logo-image {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 5rem;
+    }
+
+    #about-frontend {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        padding: 2rem 6rem 4rem 6rem;
+        background-color: #1f2937;
+    }
+
+    .main-heading {
+        font-size: 48px;
+        font-weight: 700;
+        margin-top: 2.4rem;
+    }
+
+    .frontend-defination {
+        font-size: 18px;
+    }
+
+    .testimonial-text,.testimonial-alumni {
+        font-size: 28px;
+    }
+
+    .language-description {
+        font-weight: 100;
+        font-style: italic;
+        line-height: 1.2;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .language-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem 3rem 2rem 3rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    .frontend-image {
+        width: 35rem;
+        height:30rem;
+    }
+
+    #about-frontend {
+        display: flex;
+        flex-direction: column;
+        padding: 2rem 4rem 2rem 4rem;
+        align-items: center;
+    }
+
+    #detail-section {
+        flex-direction: column;
+        padding: 1rem 3rem 2rem 3rem;
+    }
+
+    .language-heading {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 2rem;
+    }
+
+    .language-image {
+        width: 10rem;
+        height: 10rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    /* For desktop: */
+    header {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav a {
+        font-size: 18px;
+        padding: 1rem;
+    }
+
+    .logo-image {
+        width: 5rem;
+        height: 5rem;
+        margin-right: 5rem;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        align-content: center;
+        margin: 0;
+    }
+
+    #about-frontend {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 4rem 2rem 4rem;
+        align-items: center;
+    }
+
+    .language-description {
+        font-weight: 100;
+        font-style: italic;
+        line-height: 1.2;
+        text-align: center;
+        font-size: 18px;
+    }
+
+    .language-detail {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        padding: 1rem 1rem 1rem 1rem;
+        width: 30%;
+    }
+
+    .frontend-image {
+        padding: 0px;
+        width: 100%;
+        height:fit-content ;
+    }
+
+    picture {
+        padding: 0px;
+    }
+
+    #detail-section {
+        display: flex;
+        flex-direction: row;
+        padding: 2rem 4rem 2rem 4rem;
+        margin-top: 3rem;
+        align-items: center;
+    }
+
+    .language-heading {
+        text-align: center;
+        font-size: 28px;
+        margin-top: 2rem;
+    }
+
+    .language-image {
+        width: 15rem;
+        height: 15rem;
+    }
+
+    .testimonial-text,.testimonial-alumni {
+        font-size: 34px;
+    }
 }
