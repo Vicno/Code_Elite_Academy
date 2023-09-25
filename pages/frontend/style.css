@@ -1,466 +1,515 @@
 * {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
 }
 header {
-    background-color: #1f2937;
+  background-color: #1f2937;
 }
 
 nav a {
-    color: #e5e7eb;
+  color: #e5e7eb;
 }
-nav a:hover{
-    background-color: #364354;
-    text-decoration: underline;
+nav a:hover {
+  background-color: #364354;
+  text-decoration: underline;
 }
 
 #about-frontend {
-    background-color: #1f2937;
+  background-color: white;
 }
 
 .main-heading {
-    color: #f9faf8;
+  color: #1154b1;
+  font-weight: 800;
+  color: #1f2937;
+}
+.tech-image {
+  width: 100%;
+  height: 500px;
+  opacity: 0.5;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.frontend-description {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.frontend-defination {
+  margin: 1rem auto 1rem auto;
+  background: rgb(0, 0, 0, 0.7);
+  color: white;
+  line-height: 1.5;
+  width: 100%;
+  padding: 1.2rem;
+  text-align: center;
 }
 
 span {
-    animation-name: languages;
-    animation-duration:3.5s;
-    animation-iteration-count:infinite;
+  animation-name: languages;
+  animation-duration: 3.5s;
+  animation-iteration-count: infinite;
 }
 
-@keyframes languages{
-    0% {
-        color:#00cc44;
-    }
-    25%{
-        color:#ff3333;
-    }
-    50%{
-        color:#1b4de4;
-    }
-    75%{
-        color:#ff4dd2;
-    }
-    100%{
-        color:#00cc44;
-    }
-}
-
-.frontend-defination{
-        color: #e5e7eb;
-        line-height: 1.3;
-        padding: 2rem 0 2rem 0;
-}
-
-button {
-    background-color: #3882f6;
-    color: #e5e7eb;
-    border-radius: 8px;
-    margin-top: 1rem;
-    border: none;
-    padding-left: 1rem;
-    padding-right: 1rem;
-    padding-top: 0.5rem;
-    padding-bottom: 0.5rem;
-    cursor: pointer;
+@keyframes languages {
+  0% {
+    color: #00cc44;
+  }
+  25% {
+    color: #ff3333;
+  }
+  50% {
+    color: #1b4de4;
+  }
+  75% {
+    color: #ff4dd2;
+  }
+  100% {
+    color: #00cc44;
+  }
 }
 
 #detail-section {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-}
-
-
-.language-title {
-    margin:2rem 0 2rem 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .language-description {
-    color: #1f2937;
-    font-weight: 100;
-    font-style: italic;
-    line-height: 1.2;
-    text-align: center;
+  color: #1f2937;
+  font-weight: 100;
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
 }
 
 .language-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 1rem 3rem 2rem 3rem;
+}
+
+.language-heading {
+  font-weight: 800;
+  color: #1154b1;
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+}
+.language-header {
+  font-size: 4rem;
+  color: red;
+}
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #e5e7eb;
+  padding: 2rem 6rem 4rem 6rem;
+  margin-top: 1rem;
+}
+.call-to-action {
+  background-color: #1154b1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 1em 0;
+  text-align: left;
+}
+.card {
+  width: 50%;
+
+  display: flex;
+  justify-content: space-evenly;
+  background: #eee;
+  padding: 0.6em;
+  margin-bottom: 1em;
+  border-radius: 0.3em;
+  box-shadow: rgba(0, 0, 0, 0.2) 3px 6px 10px;
+  border: solid 1px #ccc;
+}
+.action-content {
+  margin: 0;
+  font-size: 1em;
+  color: #222;
+}
+.action-content p {
+  margin: 4px;
+}
+.action-content button {
+  background-color: #3882f6;
+  color: #e5e7eb;
+  border-radius: 8px;
+  border: none;
+  padding: 0.6rem;
+
+  cursor: pointer;
+  margin-top: 3px;
+}
+.thinking-image {
+  min-width: 100px;
+  height: 100px;
+  border-radius: 0.3em;
+
+  opacity: 0.7;
+  margin: 0 0.6em 0 0;
+  border: solid 1px firebrick;
+}
+h3 {
+  margin: 0;
+  font-size: 2em;
+}
+
+.testimonial-text,
+.testimonial-alumni {
+  font-weight: light;
+  font-style: italic;
+  padding-top: 1.5rem;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  background-color: #1f2937;
+  align-content: center;
+  color: #e5e7eb;
+}
+
+@media only screen and (max-width: 414px) {
+  /* For Mobile: */
+  header {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-content: center;
+    margin: 0;
+  }
+
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  nav a {
+    font-size: 10px;
+    padding: 0.5rem;
+  }
+
+  picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo-image {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .tech-image {
+    width: 100%;
+    height: 100%;
+  }
+  .frontend-description {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .frontend-defination {
+    font-size: 0.7rem;
+    background: rgb(0, 0, 0, 0.7);
+    color: white;
+    width: 100%;
+    padding: 1rem;
+    margin: 0;
+  }
+  button {
+    font-size: 0.6rem;
+    left: 35%;
+    display: block;
+  }
+
+  .language-description {
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.2;
+
+    font-size: 14px;
+  }
+
+  .language-detail {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-evenly;
-    padding: 1rem 3rem 2rem 3rem;
-}
+    padding: 1rem 2rem 1rem 2rem;
+  }
 
-.language-heading {
-    font-weight: 800;
-    color: #1f2937;
-    display: flex;
-    justify-content: center;
-    padding-top:3rem;
-    
-}
+  .testimonial-text,
+  .testimonial-alumni {
+    font-size: 24px;
+  }
 
-.testimonials {
-    display:flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background-color: #e5e7eb;
-    padding: 2rem 6rem 4rem 6rem;
-    margin-top: 10rem;
-    
-}
-
-.testimonial-text,.testimonial-alumni { 
-    font-weight: light;
-    font-style: italic;
-    padding-top: 1.5rem;
-}
-
-footer {
+  footer {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     padding-top: 2rem;
     padding-bottom: 2rem;
-    background-color: #1f2937;
     align-content: center;
-    color: #e5e7eb;
-}
+    margin: 0;
+  }
 
-@media only screen and (min-width: 0px) {
+  .frontend-image {
+    width: 25rem;
+    height: 20rem;
+  }
 
-    /* For Mobile: */
-    header {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        align-content: center;
-        margin: 0;
-    }
+  #detail-section {
+    flex-direction: column;
+    padding: 2rem 6rem 4rem 6rem;
+  }
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+  .language-heading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2rem;
+  }
 
-    nav a {
-        font-size: 10px;
-        padding: 0.5rem;
-    }
-
-    picture {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .logo-image {
-        width: 4rem;
-        height: 4rem;
-    }
-
-    .main-heading {
-        font-size: 28px;
-        font-weight: 700;
-    }
-
-    .frontend-defination {
-        font-size: 18px;
-    }
-
-    .language-description {
-        font-weight: 100;
-        font-style: italic;
-        line-height: 1.2;
-        text-align: center;
-        font-size: 14px;
-    }
-
-    .language-detail {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 1rem 3rem 2rem 3rem;
-    }
-    
-
-    .testimonial-text,.testimonial-alumni {
-        font-size: 24px;
-    }
-
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        align-content: center;
-        margin: 0;
-    }
-
-    .frontend-image {
-        width: 25rem;
-        height:20rem;
-    }
-
-    #detail-section {
-        flex-direction: column;
-        padding: 2rem 6rem 4rem 6rem;
-    }
-
-    #about-frontend {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-        padding: 2rem 6rem 4rem 6rem;
-        background-color: #1f2937;
-    }
-
-    .language-heading {
-        text-align: center;
-        font-size: 18px;
-        margin-top: 2rem;
-    }
-
-    .language-image {
-        width: 15rem;
-        height: 15rem;
-    }
+  .language-image {
+    width: 15rem;
+    height: 15rem;
+  }
+  .card {
+    width: 70%;
+  }
+  h3 {
+    font-size: 1.3rem;
+  }
 }
 
 @media only screen and (min-width: 600px) {
+  /* For Tablet: */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-content: center;
+    margin: 0;
+  }
 
-    /* For Tablet: */
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        align-content: center;
-        margin: 0;
-    }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+  nav a {
+    font-size: 12px;
+    padding: 1rem;
+  }
 
-    nav a {
-        font-size: 12px;
-        padding: 1rem;
-    }
+  .logo-image {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 5rem;
+  }
 
-    .logo-image {
-        width: 5rem;
-        height: 5rem;
-        margin-right: 5rem;
-    }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-content: center;
+    margin: 0;
+  }
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        align-content: center;
-        margin: 0;
-    }
+  picture {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-    picture {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+  .logo-image {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 5rem;
+  }
 
-    .logo-image {
-        width: 5rem;
-        height: 5rem;
-        margin-right: 5rem;
-    }
+  #about-frontend {
+    padding: 2rem 6rem 4rem 6rem;
+  }
 
-    #about-frontend {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        padding: 2rem 6rem 4rem 6rem;
-        background-color: #1f2937;
-    }
+  .main-heading {
+    font-size: 48px;
+    font-weight: 700;
+    margin-top: 2.4rem;
+  }
 
-    .main-heading {
-        font-size: 48px;
-        font-weight: 700;
-        margin-top: 2.4rem;
-    }
+  .frontend-defination {
+    font-size: 18px;
+  }
 
-    .frontend-defination {
-        font-size: 18px;
-    }
+  .testimonial-text,
+  .testimonial-alumni {
+    font-size: 28px;
+  }
 
-    .testimonial-text,.testimonial-alumni {
-        font-size: 28px;
-    }
+  .language-description {
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 18px;
+  }
 
-    .language-description {
-        font-weight: 100;
-        font-style: italic;
-        line-height: 1.2;
-        text-align: center;
-        font-size: 18px;
-    }
+  .language-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 3rem 2rem 3rem;
+  }
 
-    .language-detail {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 1rem 3rem 2rem 3rem;
-    }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-content: center;
+    margin: 0;
+  }
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        align-content: center;
-        margin: 0;
-    }
+  .frontend-image {
+    width: 35rem;
+    height: 30rem;
+  }
 
-    .frontend-image {
-        width: 35rem;
-        height:30rem;
-    }
+  #detail-section {
+    flex-direction: column;
+    padding: 1rem 3rem 2rem 3rem;
+  }
 
-    #about-frontend {
-        display: flex;
-        flex-direction: column;
-        padding: 2rem 4rem 2rem 4rem;
-        align-items: center;
-    }
+  .language-heading {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 2rem;
+  }
 
-    #detail-section {
-        flex-direction: column;
-        padding: 1rem 3rem 2rem 3rem;
-    }
-
-    .language-heading {
-        text-align: center;
-        font-size: 18px;
-        margin-top: 2rem;
-    }
-
-    .language-image {
-        width: 10rem;
-        height: 10rem;
-    }
+  .language-image {
+    width: 10rem;
+    height: 10rem;
+  }
 }
 
 @media only screen and (min-width: 768px) {
+  /* For desktop: */
+  header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    align-content: center;
+    margin: 0;
+  }
 
-    /* For desktop: */
-    header {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-left: 2rem;
-        padding-right: 2rem;
-        align-content: center;
-        margin: 0;
-    }
+  nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+  }
 
-    nav {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        align-items: center;
-    }
+  nav a {
+    font-size: 18px;
+    padding: 1rem;
+  }
 
-    nav a {
-        font-size: 18px;
-        padding: 1rem;
-    }
+  .logo-image {
+    width: 5rem;
+    height: 5rem;
+    margin-right: 5rem;
+  }
 
-    .logo-image {
-        width: 5rem;
-        height: 5rem;
-        margin-right: 5rem;
-    }
+  footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    align-content: center;
+    margin: 0;
+  }
 
-    footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
-        padding-top: 2rem;
-        padding-bottom: 2rem;
-        align-content: center;
-        margin: 0;
-    }
+  .language-description {
+    font-weight: 100;
+    font-style: italic;
+    line-height: 1.2;
+    text-align: center;
+    font-size: 18px;
+  }
 
-    #about-frontend {
-        display: flex;
-        flex-direction: row;
-        padding: 2rem 4rem 2rem 4rem;
-        align-items: center;
-    }
+  .language-detail {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 1rem 1rem 1rem 1rem;
+    width: 30%;
+  }
 
-    .language-description {
-        font-weight: 100;
-        font-style: italic;
-        line-height: 1.2;
-        text-align: center;
-        font-size: 18px;
-    }
+  .frontend-image {
+    padding: 0px;
+    width: 100%;
+    height: fit-content;
+  }
 
-    .language-detail {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        padding: 1rem 1rem 1rem 1rem;
-        width: 30%;
-    }
+  picture {
+    padding: 0px;
+  }
 
-    .frontend-image {
-        padding: 0px;
-        width: 100%;
-        height:fit-content ;
-    }
+  #detail-section {
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 4rem 2rem 4rem;
+    margin-top: 3rem;
+    align-items: center;
+  }
 
-    picture {
-        padding: 0px;
-    }
+  .language-heading {
+    text-align: center;
+    font-size: 28px;
+    margin-top: 2rem;
+  }
 
-    #detail-section {
-        display: flex;
-        flex-direction: row;
-        padding: 2rem 4rem 2rem 4rem;
-        margin-top: 3rem;
-        align-items: center;
-    }
+  .language-image {
+    width: 15rem;
+    height: 15rem;
+  }
 
-    .language-heading {
-        text-align: center;
-        font-size: 28px;
-        margin-top: 2rem;
-    }
-
-    .language-image {
-        width: 15rem;
-        height: 15rem;
-    }
-
-    .testimonial-text,.testimonial-alumni {
-        font-size: 34px;
-    }
+  .testimonial-text,
+  .testimonial-alumni {
+    font-size: 34px;
+  }
 }
