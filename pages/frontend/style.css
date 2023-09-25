@@ -362,7 +362,7 @@ footer {
   .main-heading {
     font-size: 48px;
     font-weight: 700;
-    margin-top: 2.4rem;
+    margin-top: 1rem;
   }
 
   .frontend-defination {
@@ -450,6 +450,12 @@ footer {
     width: 5rem;
     height: 5rem;
     margin-right: 5rem;
+  }
+  .frontend-description {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
   }
 
   footer {
