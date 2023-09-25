@@ -7,8 +7,6 @@ header {
     background-color: #1f2937;
 }
 
-
-
 nav a {
     color: #e5e7eb;
 }
@@ -23,11 +21,9 @@ nav a:hover {
     background-color: #1f2937;
 }
 
-
 #information-section {
     color: #f9faf8;
 }
-
 
 form {
     border-color: #1f2937;
@@ -91,7 +87,6 @@ select {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .form-container input,
 textarea {
     border: 1px solid #1f2937;
@@ -105,7 +100,7 @@ footer {
 
 @media only screen and (min-width: 0px) {
 
-    /* For desktop: */
+    /* For mobile: */
     header {
         display: flex;
         flex-direction: column;
@@ -133,6 +128,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .logo-image {
         width: 4rem;
         height: 4rem;
@@ -284,7 +280,6 @@ footer {
         margin-right: 0rem;
         width: 22rem;
     }
-
 }
 
 @media only screen and (min-width: 600px) {
@@ -462,6 +457,9 @@ footer {
         width: 22rem;
     }
 
+    #robbu-whatsapp-button {
+        margin-right: 2rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {

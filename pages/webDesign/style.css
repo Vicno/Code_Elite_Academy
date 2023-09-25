@@ -687,7 +687,7 @@ footer {
     }
 
     picture {
-        padding: 0px;
+        padding: 0px; 
     }
 
     #introduction-section {
@@ -696,6 +696,10 @@ footer {
         padding: 2rem 4rem 2rem 4rem;
         margin-top: 3rem;
         align-items: center;
+    }
+    
+    #introduction-section picture {
+        width: 160rem;
     }
 
     .webdesign-main-text {
