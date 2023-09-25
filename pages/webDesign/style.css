@@ -87,6 +87,10 @@ footer {
     color: rgb(169, 214, 200);
 }
 
+#top-companies {
+    color: #1f2937;
+}
+
 .image-link {
     background-color: #1f2937;
 }
@@ -121,7 +125,7 @@ footer {
 }
 
 .card a {
-    background-color: #3882f6;
+    background-color: salmon;
     border-radius: 10px;
     color: white;
     text-decoration: none;
@@ -191,6 +195,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .logo-image {
         width: 4rem;
         height: 4rem;
@@ -218,14 +223,6 @@ footer {
         align-items: center;
     }
 
-    .image-introduction {
-        width: 100%;
-        height: 100%;
-        margin-top: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
     .webdesign-main-text {
         font-size: 28px;
         font-weight: 700;
@@ -233,66 +230,92 @@ footer {
         text-align: center;
     }
 
+    .imagination-text {
+        font-size: 28px;
+        margin-top: 2rem;
+        font-weight: bold;
+        -webkit-animation: colorchange 20s infinite alternate;
+        text-align: center;
+    }
+
     #webdesign-text {
         text-align: center;
-        padding: 1rem;
         font-size: 18px;
     }
 
     #whylearn-text {
         text-align: center;
-        font-size: 24px;
-        margin-top: 2rem;
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .text-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .image-link {
-        width: 20rem;
-        height: 40rem;
+        min-width: 300px;
+        height: auto;
         padding: 1rem;
         align-self: center;
         display: flex;
         flex-direction: column;
+        margin-top: -5rem;
     }
 
     #motivate-text {
         background-size: 200%;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        font-size: 18px;
+        margin-top: 0rem;
+        font-size: 28px;
         font-weight: 800;
         text-align: center;
     }
-    
-    #explore-section {
+
+    .tech-logo {
         display: flex;
-        flex-direction: column;
-        padding: 2rem 4rem 2rem 4rem;
+        justify-content: center;
         align-items: center;
-    }
-    
-    table {
-        border-collapse: separate;
-        border-spacing: 0rem;
+        flex-wrap: wrap;
+        width: 300px;
     }
 
-    td {
+    .tech-logo > div {
+        margin: 10px;
         text-align: center;
-        width: 10rem;
     }
 
     .card {
         display: flex;
         flex-direction: column;
+        text-align: center;
         border-radius: 5px;
-        width: 7rem;
+        width: 20rem;
+        margin-top: 5.5rem;
     }
 
     .card>img {
         border-radius: 5px 5px 0 0;
         margin-top: 1rem;
-        height: 150px;
+        height: 180px;
         width: 100%;
         object-fit: contain;
+    }
+
+    .card-expl {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 37rem;
+        margin-top: 5rem;
+        align-items: center;
+    }
+
+    .card-expl.numb-2 {
+        margin-top: 4.5rem;
     }
 
     .card-content {
@@ -300,7 +323,7 @@ footer {
     }
 
     .card h3 {
-        font-size: 1rem;
+        font-size: 1.4rem;
         margin-top: 0;
     }
 
@@ -313,11 +336,12 @@ footer {
         padding: 10px 20px;
         text-align: center;
         display: inline-block;
+        border-radius: 10px;
     }
 
     #course-section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 2rem 4rem 2rem 4rem;
         align-items: center;
     }
@@ -327,18 +351,18 @@ footer {
         flex-direction: column;
         padding: 2rem 6rem 4rem 6rem;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     .flip-card {
-        width: 3rem;
-        height: 3rem;
+        width: 130px;
+        height: 130px;
         perspective: 1000px;
     }
 
     .logo-flip-card {
-        width: 3rem;
-        height: 3rem;
+        width: 130px;
+        height: 130px;
     }
 
     .flip-card-inner {
@@ -359,15 +383,55 @@ footer {
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        font-size: 8px;
+        font-size: 18px;
     }
 
-    #tech-title {
-        position: absolute;
-        font-size: 18px;
-        font-weight: 800;
-        margin-top: -4rem;
+    .down-line {
+        background-color: #1f2937;
+        padding-bottom: 0.5rem;
+        margin-top: 3rem;
+    }
+
+    .up-line {
+        background-color: #1f2937;
+        margin-top: 5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .uni-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .uni-section>div {
+        margin: 12px;
+    }
+
+    .card-uni {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        max-width: 15rem;
+        height: 15rem;
         text-align: center;
+    }
+
+    .card-uni>img {
+        border-radius: 5px 5px 0 0;
+        margin-top: 1rem;
+        height: 180px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #top-companies {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 6rem;
     }
 }
 
@@ -475,11 +539,6 @@ footer {
         text-align: center;
     }
 
-    .course-explanation {
-        display: flex;
-        flex-direction: column;
-    }
-
     .tech-logo {
         display: flex;
         flex-wrap: wrap;
@@ -496,6 +555,7 @@ footer {
     .card {
         display: flex;
         flex-direction: column;
+        text-align: center;
         border-radius: 5px;
         width: 20rem;
         margin-top: 5.5rem;
@@ -507,19 +567,6 @@ footer {
         height: 180px;
         width: 100%;
         object-fit: contain;
-    }
-
-    .card-expl {
-        display: flex;
-        flex-direction: column;
-        border-radius: 5px;
-        width: 37rem;
-        margin-top: 5rem;
-        align-items: center;
-    }
-
-    .card-expl.numb-2 {
-        margin-top: 4.5rem;
     }
 
     .card-content {
@@ -537,23 +584,6 @@ footer {
     }
 
     .card a {
-        padding: 10px 20px;
-        text-align: center;
-        display: inline-block;
-        border-radius: 10px;
-    }
-
-    .card-expl h3 {
-        font-size: 1.4rem;
-        margin-top: 0;
-    }
-
-    .card-expl p {
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-
-    .card-expl a {
         padding: 10px 20px;
         text-align: center;
         display: inline-block;
@@ -618,10 +648,16 @@ footer {
         margin-top: 5rem;
         padding-bottom: 0.5rem;
     }
+
     .uni-section {
         display: flex;
-        flex-direction: row;
+        justify-content: center;
         align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .uni-section>div {
+        margin: 12px;
     }
 
     .card-uni {
@@ -629,10 +665,8 @@ footer {
         flex-direction: column;
         align-items: center;
         border-radius: 5px;
-        width: 25rem;
-        height: auto;
-        margin-top: 5.5rem;
-        margin-left: 3rem;
+        max-width: 15rem;
+        height: 15rem;
         text-align: center;
     }
 
@@ -642,6 +676,13 @@ footer {
         height: 180px;
         width: 100%;
         object-fit: contain;
+    }
+
+    #top-companies {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 6rem;
     }
 }
 
@@ -666,7 +707,7 @@ footer {
     }
 
     nav a {
-        font-size: 12px;
+        font-size: 18px;
         padding: 1rem;
     }
 
@@ -696,10 +737,6 @@ footer {
         padding: 2rem 4rem 2rem 4rem;
         margin-top: 3rem;
         align-items: center;
-    }
-    
-    #introduction-section picture {
-        width: 160rem;
     }
 
     .webdesign-main-text {
@@ -753,11 +790,6 @@ footer {
         text-align: center;
     }
 
-    .explanation-section {
-        text-align: center;
-        padding: 0rem 6rem 0rem 6rem;
-    }
-
     .tech-logo {
         display: flex;
         flex-wrap: wrap;
@@ -790,14 +822,6 @@ footer {
         object-fit: contain;
     }
 
-    .card-expl {
-        display: flex;
-        flex-direction: column;
-        border-radius: 5px;
-        width: 37rem;
-        align-items: center;
-    }
-
     .card-content {
         padding: 20px;
     }
@@ -813,23 +837,6 @@ footer {
     }
 
     .card a {
-        padding: 10px 20px;
-        text-align: center;
-        display: inline-block;
-        border-radius: 10px;
-    }
-
-    .card-expl h3 {
-        font-size: 1.4rem;
-        margin-top: 0;
-    }
-
-    .card-expl p {
-        font-size: 1rem;
-        margin-bottom: 10px;
-    }
-
-    .card-expl a {
         padding: 10px 20px;
         text-align: center;
         display: inline-block;
@@ -887,17 +894,17 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        flex-wrap: wrap;
+        flex-direction: row;
+        margin-bottom: 7rem;
     }
 
     .uni-section>div {
-        width: 200rem;
         margin: 12px;
     }
 
     .card-uni {
         border-radius: 5px;
-        min-width: 12rem;
+        max-width: 15rem;
         height: 15rem;
         text-align: center;
         margin-left: 3rem;
@@ -910,6 +917,17 @@ footer {
         height: 180px;
         width: 100%;
         object-fit: contain;
+    }
+
+    .card-content-uni {
+        padding: 20px;
+    }
+
+    #top-companies {
+        text-align: center;
+        font-size: 28px;
+        font-weight: 700;
+        margin-top: 9rem;
     }
 
     .down-line {
