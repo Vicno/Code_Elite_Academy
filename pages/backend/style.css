@@ -234,15 +234,6 @@ footer {
         margin-bottom: 2rem;
     }
 
-    table {
-        border-collapse: separate;
-        border-spacing: 0rem;
-    }
-
-    td {
-        text-align: center;
-        width: 10rem;
-    }
 
     .card {
         display: flex;
@@ -455,21 +446,11 @@ footer {
         margin-bottom: 2rem;
     }
 
-    table {
-        border-collapse: separate;
-        border-spacing: 0rem;
-    }
-
-    td {
-        text-align: center;
-        width: 10rem;
-    }
-
     .card {
         display: flex;
         flex-direction: column;
         border-radius: 5px;
-        width: 10rem;
+        width: 12rem;
     }
 
     .card>img {
@@ -504,8 +485,18 @@ footer {
     #course-section {
         display: flex;
         flex-direction: column;
-        padding: 2rem 4rem 2rem 4rem;
+        padding: 2rem 2rem 2rem 2rem;
         align-items: center;
+    }
+
+    #courses-cards-section{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        min-width: 600px;
     }
 
     #links-section {
@@ -517,9 +508,10 @@ footer {
     }
 
     .flip-card {
-        width: 5rem;
-        height: 5rem;
+        width: 8rem;
+        height: 8rem;
         perspective: 1000px;
+        margin: 1rem;
     }
 
     .flip-card-inner {
@@ -543,14 +535,25 @@ footer {
         font-size: 12px;
     }
 
+    #tech-cards {
+        margin-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        min-width: 300px;
+    }
+
     #tech-title {
         font-size: 18px;
         font-weight: 800;
     }
 
     .image-flip-card {
-        width:  5rem;
-        height:  5rem;
+        width:  8rem;
+        height:  8rem;
     }
 }
 
@@ -677,15 +680,6 @@ footer {
         margin-bottom: 2rem;
     }
 
-    table {
-        border-collapse: separate;
-        border-spacing: 0rem;
-    }
-
-    td {
-        text-align: center;
-        width: 10rem;
-    }
 
     .card {
         display: flex;
@@ -730,6 +724,16 @@ footer {
         align-items: center;
     }
 
+    #courses-cards-section{
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        width: 80%;
+        min-width: 760px;
+    }
+
     #links-section {
         display: flex;
         flex-direction: column;
@@ -742,6 +746,8 @@ footer {
         width: 7rem;
         height: 7rem;
         perspective: 1000px;
+        margin: 0;
+        margin-top: 1rem;
     }
 
     .flip-card-inner {
@@ -762,6 +768,18 @@ footer {
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
+
+    }
+
+    #tech-cards {
+        margin-top: 1rem;
+        display: flex;
+        justify-content: space-around;
+        flex-direction: row;
+        align-items: center;
+        width: 100%;
+        min-width: 760px;
+        
     }
 
     #tech-title {
