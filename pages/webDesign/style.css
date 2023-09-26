@@ -7,6 +7,10 @@ header {
     background-color: #1f2937;
 }
 
+body {
+    background-color: rgb(169, 214, 200);
+}
+
 nav a {
     color: #e5e7eb;
 }
@@ -21,20 +25,70 @@ footer {
     color: #e5e7eb;
 }
 
-#introduction-section {
-    background-color: #e5e7eb;
+.text-header {
+    display: flex;
+    flex-direction: row;
 }
+
+#introduction-section {
+    background-color:  rgb(169, 214, 200);
+}
+
+.imagination-text {
+    font-weight: bold;
+    -webkit-animation: colorchange 20s infinite alternate;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+      color: rgb(23, 23, 60);
+    }
+    10% {
+      color: #6f1397;
+    }
+    20% {
+      color: #ffffff;
+    }
+    30% {
+      color: #ed6639;
+    }
+    40% {
+      color: rgb(68, 68, 125);
+    }
+    50% {
+      color: #4988c7;
+    }
+    60% {
+      color: rgb(184, 184, 190);
+    }
+    70% {
+      color: #42284b;
+    }
+    80% {
+      color: #d6b52e;
+    }
+    90% {
+      color: #304c5e;
+    }
+    100% {
+      color: rgb(231, 135, 103);
+    }
+  }
 
 .webdesign-main-text {
     color: #1f2937;
 }
 
 #webdesign-text {
-    color: #e5e7eb;
+    color: rgb(169, 214, 200);
 }
 
 #whylearn-text {
-    color: #e5e7eb;
+    color: rgb(169, 214, 200);
+}
+
+#top-companies {
+    color: #1f2937;
 }
 
 .image-link {
@@ -43,7 +97,7 @@ footer {
 
 #motivate-text {
     color: white;
-    background: linear-gradient(to left, salmon 50%, rgb(173, 182, 187) 50%) right;
+    background: linear-gradient(to left, salmon 50%, rgb(169, 214, 200) 50%) right;
 }
 
 #motivate-text:hover {
@@ -56,12 +110,22 @@ footer {
     background-color: #fff;
 }
 
+.card-uni {
+    background-color: #fff;
+}
+
+.card-expl {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease-in-out;
+    background-color: rgb(215, 162, 156);
+}
+
 .card:hover {
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
 }
 
 .card a {
-    background-color: #3882f6;
+    background-color: salmon;
     border-radius: 10px;
     color: white;
     text-decoration: none;
@@ -131,6 +195,7 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
     .logo-image {
         width: 4rem;
         height: 4rem;
@@ -158,14 +223,6 @@ footer {
         align-items: center;
     }
 
-    .image-introduction {
-        width: 100%;
-        height: 100%;
-        margin-top: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;
-    }
-
     .webdesign-main-text {
         font-size: 28px;
         font-weight: 700;
@@ -173,66 +230,92 @@ footer {
         text-align: center;
     }
 
+    .imagination-text {
+        font-size: 28px;
+        margin-top: 2rem;
+        font-weight: bold;
+        -webkit-animation: colorchange 20s infinite alternate;
+        text-align: center;
+    }
+
     #webdesign-text {
         text-align: center;
-        padding: 1rem;
         font-size: 18px;
     }
 
     #whylearn-text {
         text-align: center;
-        font-size: 24px;
-        margin-top: 2rem;
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .text-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .image-link {
-        width: 20rem;
-        height: 40rem;
+        min-width: 280px;
+        height: auto;
         padding: 1rem;
         align-self: center;
         display: flex;
         flex-direction: column;
+        margin-top: -5rem;
     }
 
     #motivate-text {
         background-size: 200%;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        font-size: 18px;
+        margin-top: 0rem;
+        font-size: 28px;
         font-weight: 800;
         text-align: center;
     }
-    
-    #explore-section {
+
+    .tech-logo {
         display: flex;
-        flex-direction: column;
-        padding: 2rem 4rem 2rem 4rem;
+        justify-content: center;
         align-items: center;
-    }
-    
-    table {
-        border-collapse: separate;
-        border-spacing: 0rem;
+        flex-wrap: wrap;
+        width: 300px;
     }
 
-    td {
+    .tech-logo > div {
+        margin: 10px;
         text-align: center;
-        width: 10rem;
     }
 
     .card {
         display: flex;
         flex-direction: column;
+        text-align: center;
         border-radius: 5px;
-        width: 7rem;
+        width: 18rem;
+        margin-top: 5.5rem;
     }
 
     .card>img {
         border-radius: 5px 5px 0 0;
         margin-top: 1rem;
-        height: 150px;
+        height: 180px;
         width: 100%;
         object-fit: contain;
+    }
+
+    .card-expl {
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        width: 37rem;
+        margin-top: 5rem;
+        align-items: center;
+    }
+
+    .card-expl.numb-2 {
+        margin-top: 4.5rem;
     }
 
     .card-content {
@@ -240,7 +323,7 @@ footer {
     }
 
     .card h3 {
-        font-size: 1rem;
+        font-size: 1.4rem;
         margin-top: 0;
     }
 
@@ -253,11 +336,12 @@ footer {
         padding: 10px 20px;
         text-align: center;
         display: inline-block;
+        border-radius: 10px;
     }
 
     #course-section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 2rem 4rem 2rem 4rem;
         align-items: center;
     }
@@ -267,18 +351,18 @@ footer {
         flex-direction: column;
         padding: 2rem 6rem 4rem 6rem;
         align-items: center;
-        margin-top: 2rem;
+        margin-top: 5rem;
     }
 
     .flip-card {
-        width: 3rem;
-        height: 3rem;
+        width: 130px;
+        height: 130px;
         perspective: 1000px;
     }
 
     .logo-flip-card {
-        width: 3rem;
-        height: 3rem;
+        width: 130px;
+        height: 130px;
     }
 
     .flip-card-inner {
@@ -299,15 +383,55 @@ footer {
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        font-size: 8px;
+        font-size: 18px;
     }
 
-    #tech-title {
-        position: absolute;
-        font-size: 18px;
-        font-weight: 800;
-        margin-top: -4rem;
+    .down-line {
+        background-color: #1f2937;
+        padding-bottom: 0.5rem;
+        margin-top: 3rem;
+    }
+
+    .up-line {
+        background-color: #1f2937;
+        margin-top: 5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .uni-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .uni-section>div {
+        margin: 12px;
+    }
+
+    .card-uni {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        max-width: 15rem;
+        height: 15rem;
         text-align: center;
+    }
+
+    .card-uni>img {
+        border-radius: 5px 5px 0 0;
+        margin-top: 1rem;
+        height: 180px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #top-companies {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 6rem;
     }
 }
 
@@ -364,69 +488,83 @@ footer {
         align-items: center;
     }
 
-    .image-introduction {
-        width: 25rem;
-        align-items: center;
-    }
-
     .webdesign-main-text {
-        font-size: 48px;
+        font-size: 38px;
         font-weight: 700;
         margin-top: 2.4rem;
+    }
+
+    .imagination-text {
+        font-size: 38px;
+        margin-top: 2rem;
+        font-weight: bold;
+        -webkit-animation: colorchange 20s infinite alternate;
         text-align: center;
     }
 
     #webdesign-text {
         text-align: center;
-        font-size: 14px;
+        font-size: 18px;
     }
 
     #whylearn-text {
         text-align: center;
-        font-size: 18px;
+        font-size: 20px;
         margin-top: 1rem;
     }
 
+    .text-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
     .image-link {
-        width: 34rem;
-        height: 30rem;
+        width: 35rem;
+        height: 95rem;
         padding: 1rem;
         align-self: center;
         display: flex;
         flex-direction: column;
+        margin-top: -5rem;
     }
 
     #motivate-text {
         background-size: 200%;
         padding-top: 1rem;
         padding-bottom: 1rem;
-        font-size: 18px;
+        margin-top: 0rem;
+        font-size: 28px;
         font-weight: 800;
         text-align: center;
     }
 
-    table {
-        border-collapse: separate;
-        border-spacing: 0rem;
+    .tech-logo {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -80rem;
+        width: 200px;
+        margin-left: 20rem;
     }
 
-    td {
+    .tech-logo > div {
+        margin: 10px;
         text-align: center;
-        width: 10rem;
     }
 
     .card {
         display: flex;
         flex-direction: column;
+        text-align: center;
         border-radius: 5px;
-        width: 10rem;
-        margin-top: 2rem;
+        width: 20rem;
+        margin-top: 5.5rem;
     }
 
     .card>img {
         border-radius: 5px 5px 0 0;
         margin-top: 1rem;
-        height: 150px;
+        height: 180px;
         width: 100%;
         object-fit: contain;
     }
@@ -454,7 +592,7 @@ footer {
 
     #course-section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 2rem 4rem 2rem 4rem;
         align-items: center;
     }
@@ -468,14 +606,14 @@ footer {
     }
 
     .flip-card {
-        width: 5rem;
-        height: 5rem;
+        width: 185px;
+        height: 185px;
         perspective: 1000px;
     }
 
     .logo-flip-card {
-        width: 5rem;
-        height: 5rem;
+        width: 185px;
+        height: 185px;
     }
 
     .flip-card-inner {
@@ -496,17 +634,55 @@ footer {
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        font-size: 16px;
-    }
-
-    #tech-title {
         font-size: 18px;
-        font-weight: 800;
     }
 
-    .image-flip-card {
-        width:  5rem;
-        height:  5rem;
+    .down-line {
+        background-color: #1f2937;
+        padding-bottom: 0.5rem;
+        margin-top: 3rem;
+    }
+
+    .up-line {
+        background-color: #1f2937;
+        margin-top: 5rem;
+        padding-bottom: 0.5rem;
+    }
+
+    .uni-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .uni-section>div {
+        margin: 12px;
+    }
+
+    .card-uni {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 5px;
+        max-width: 15rem;
+        height: 15rem;
+        text-align: center;
+    }
+
+    .card-uni>img {
+        border-radius: 5px 5px 0 0;
+        margin-top: 1rem;
+        height: 180px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    #top-companies {
+        text-align: center;
+        font-size: 24px;
+        font-weight: 700;
+        margin-top: 6rem;
     }
 }
 
@@ -558,80 +734,90 @@ footer {
     #introduction-section {
         display: flex;
         flex-direction: column;
-        padding: 2rem 0rem 1rem 0rem;
+        padding: 2rem 4rem 2rem 4rem;
         margin-top: 3rem;
         align-items: center;
     }
-    
-    #introduction-section picture {
-        width: 160rem;
-    }
-
-    .image-introduction {
-        width: 100%;
-        height: 80%;
-        margin-top: 2.3rem;
-        margin-right: 0rem;
-    }
 
     .webdesign-main-text {
-        font-size: 48px;
+        font-size: 38px;
         font-weight: 700;
         margin-top: 2.4rem;
     }
 
+    .imagination-text {
+        font-size: 38px;
+        margin-top: 2rem;
+        font-weight: bold;
+        -webkit-animation: colorchange 20s infinite alternate;
+        text-align: center;
+    }
+
     #webdesign-text {
+        text-align: center;
         font-size: 18px;
-        margin-left: 2rem;
     }
 
     #whylearn-text {
-        font-size: 28px;
-        margin-top: 4rem;
-        margin-left: 2rem;
+        text-align: center;
+        font-size: 20px;
+        margin-top: 1rem;
+    }
+
+    .text-header {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
 
     .image-link {
-        width: 700px;
-        min-width: 60%;
-        height: 30rem;
+        width: 45rem;
+        height: auto;
         padding: 1rem;
         align-self: center;
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        margin-top: -5rem;
     }
 
     #motivate-text {
         background-size: 200%;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        margin-top: 0rem;
         font-size: 28px;
         font-weight: 800;
         text-align: center;
     }
 
-    table {
-        border-collapse: separate;
-        border-spacing: 0rem;
+    .tech-logo {
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: -79rem;
+        width: 200px;
+        margin-right: -6rem;
     }
 
-    td {
+    .tech-logo > div {
+        margin: 12px;
         text-align: center;
-        width: 10rem;
     }
 
     .card {
         display: flex;
         flex-direction: column;
         border-radius: 5px;
-        width: 15rem;
-        margin-top: 2rem;
+        width: 25rem;
+        height: 22rem;
+        margin-top: 5.5rem;
+        margin-left: 3rem;
+        text-align: center;
     }
 
     .card>img {
         border-radius: 5px 5px 0 0;
         margin-top: 1rem;
-        height: 150px;
+        height: 180px;
         width: 100%;
         object-fit: contain;
     }
@@ -657,10 +843,9 @@ footer {
         border-radius: 10px;
     }
 
-
     #course-section {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         padding: 2rem 4rem 2rem 4rem;
         align-items: center;
     }
@@ -674,14 +859,14 @@ footer {
     }
 
     .flip-card {
-        width: 6.5rem;
-        height: 6.5rem;
+        width: 185px;
+        height: 185px;
         perspective: 1000px;
     }
 
     .logo-flip-card {
-        width: 6.5rem;
-        height: 6.5rem;
+        width: 185px;
+        height: 185px;
     }
 
     .flip-card-inner {
@@ -702,17 +887,58 @@ footer {
         height: 100%;
         -webkit-backface-visibility: hidden;
         backface-visibility: hidden;
-        font-size: 16px;
+        font-size: 18px;
     }
 
-    #tech-title {
+    .uni-section {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 7rem;
+    }
+
+    .uni-section>div {
+        margin: 12px;
+    }
+
+    .card-uni {
+        border-radius: 5px;
+        max-width: 15rem;
+        height: 15rem;
+        text-align: center;
+        margin-left: 3rem;
+        margin-right: 3rem;
+    }
+
+    .card-uni>img {
+        border-radius: 5px 5px 0 0;
+        margin-top: 1rem;
+        height: 180px;
+        width: 100%;
+        object-fit: contain;
+    }
+
+    .card-content-uni {
+        padding: 20px;
+    }
+
+    #top-companies {
+        text-align: center;
         font-size: 28px;
-        font-weight: 800;
+        font-weight: 700;
+        margin-top: 9rem;
     }
 
-    .image-flip-card {
-        width:  5rem;
-        height:  5rem;
+    .down-line {
+        background-color: #1f2937;
+        padding-bottom: 0.5rem;
+        margin-top: -1.5rem;
+    }
+
+    .up-line {
+        background-color: #1f2937;
+        margin-top: 5rem;
+        padding-bottom: 0.5rem;
     }
 }
-

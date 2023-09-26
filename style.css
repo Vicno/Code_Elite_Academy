@@ -145,12 +145,22 @@ footer{
     }
     
     .information-header {
-        font-size: 16px;
+        font-size: 20px;
+    }
+
+    #cards-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #cards-section>figure {
+        margin: 10px;
     }
     
     .information-image {
-        width: 4rem;
-        height: 4rem;
+        width: 10rem;
+        height: 10rem;
     }
     
     .intro-text {
@@ -168,17 +178,6 @@ footer{
         padding-right: 1rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-    }
-    
-    table {
-        border-collapse: separate;
-        border-spacing: 0.5rem;
-    }
-    
-    td {
-        text-align: center;
-        width: 6rem;
-        font-size: 12px;
     }
     
     #quote-section {
@@ -265,14 +264,24 @@ footer{
         padding: 2rem 6rem 4rem 6rem;
         align-items: center;
     }
+
+    #cards-section {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #cards-section>figure {
+        margin: 10px;
+    }
     
     .information-header {
         font-size: 36px;
     }
     
     .information-image {
-        width: 8rem;
-        height: 8rem;
+        width: 14rem;
+        height: 14rem;
     }
     
     .intro-text {
@@ -290,16 +299,6 @@ footer{
         padding-right: 1rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-    }
-    
-    table {
-        border-collapse: separate;
-        border-spacing: 1rem;
-    }
-    
-    td {
-        text-align: center;
-        width: 8rem;
     }
     
     #quote-section {
@@ -385,9 +384,21 @@ footer{
         padding: 2rem 6rem 4rem 6rem;
         align-items: center;
     }
+
+    #cards-section {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin-bottom: 5rem;
+    }
+
+    #cards-section>figure {
+        margin: 10px;
+    }
     
     .information-header {
         font-size: 36px;
+        margin-top: 5rem;
     }
     
     .information-image {
@@ -409,16 +420,6 @@ footer{
         padding-right: 1rem;
         padding-top: 0.5rem;
         padding-bottom: 0.5rem;
-    }
-    
-    table {
-        border-collapse: separate;
-        border-spacing: 1rem;
-    }
-    
-    td {
-        text-align: center;
-        width: 8rem;
     }
     
     #quote-section {
